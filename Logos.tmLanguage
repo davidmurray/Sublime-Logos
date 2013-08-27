@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>xm</string>
+		<string>x</string>
+		<string>xi</string>
+		<string>xmi</string>
+	</array>
+	<key>name</key>
+	<string>Logos</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>%(init|hook|subclass|group|class|new|ctor|end|config|orig|log|class)</string>
+			<key>name</key>
+			<string>keyword.source.logos</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.source.logos</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>%c\(([A-Za-z$_]+)\)</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>source.objc</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>source.c++</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.logos</string>
+	<key>uuid</key>
+	<string>168b905c-d157-40e3-ae1d-3a79f5326ace</string>
+</dict>
+</plist>
